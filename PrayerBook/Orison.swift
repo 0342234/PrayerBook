@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+//  MARK: SMT
 struct Orison {
     let id: UUID
     let text: String
