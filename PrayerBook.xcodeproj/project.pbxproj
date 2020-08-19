@@ -7,25 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0904291F24E3C5E6007A72BD /* OrisonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0904291E24E3C5E6007A72BD /* OrisonView.swift */; };
+		093EA36024EA413D00010F9A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093EA35F24EA413D00010F9A /* Constants.swift */; };
+		093EA36224EA41E700010F9A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093EA36124EA41E700010F9A /* SettingsView.swift */; };
+		097E187324ED94A10010FA85 /* OrisonsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E187224ED94A10010FA85 /* OrisonsSection.swift */; };
 		09B3352024B61C6200FED0EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B3351F24B61C6200FED0EE /* AppDelegate.swift */; };
 		09B3352224B61C6200FED0EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B3352124B61C6200FED0EE /* SceneDelegate.swift */; };
-		09B3352424B61C6200FED0EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B3352324B61C6200FED0EE /* ViewController.swift */; };
+		09B3352424B61C6200FED0EE /* OrisonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B3352324B61C6200FED0EE /* OrisonsView.swift */; };
 		09B3352724B61C6200FED0EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09B3352524B61C6200FED0EE /* Main.storyboard */; };
 		09B3352A24B61C6200FED0EE /* PrayerBook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09B3352824B61C6200FED0EE /* PrayerBook.xcdatamodeld */; };
 		09B3352C24B61C6400FED0EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09B3352B24B61C6400FED0EE /* Assets.xcassets */; };
 		09B3352F24B61C6400FED0EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09B3352D24B61C6400FED0EE /* LaunchScreen.storyboard */; };
+		09CDAFFB24C4298A00A096AF /* OrisonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09CDAFF924C4298A00A096AF /* OrisonTableViewCell.swift */; };
+		09CDAFFC24C4298A00A096AF /* OrisonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09CDAFFA24C4298A00A096AF /* OrisonTableViewCell.xib */; };
+		09E9C59A24C9B67200FC3CE6 /* Orison.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E9C59924C9B67200FC3CE6 /* Orison.swift */; };
+		09E9C59C24C9B69900FC3CE6 /* OrisonsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E9C59B24C9B69800FC3CE6 /* OrisonsService.swift */; };
+		09E9C59E24C9BBAB00FC3CE6 /* OrisonsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E9C59D24C9BBAB00FC3CE6 /* OrisonsPresenter.swift */; };
+		09E9C5A024D0ECAF00FC3CE6 /* OrisonsSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E9C59F24D0ECAF00FC3CE6 /* OrisonsSectionHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0904291E24E3C5E6007A72BD /* OrisonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrisonView.swift; sourceTree = "<group>"; };
+		093EA35F24EA413D00010F9A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		093EA36124EA41E700010F9A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		097E187224ED94A10010FA85 /* OrisonsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrisonsSection.swift; sourceTree = "<group>"; };
 		09B3351C24B61C6200FED0EE /* PrayerBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrayerBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B3351F24B61C6200FED0EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09B3352124B61C6200FED0EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		09B3352324B61C6200FED0EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09B3352324B61C6200FED0EE /* OrisonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrisonsView.swift; sourceTree = "<group>"; };
 		09B3352624B61C6200FED0EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09B3352924B61C6200FED0EE /* PrayerBook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PrayerBook.xcdatamodel; sourceTree = "<group>"; };
 		09B3352B24B61C6400FED0EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09B3352E24B61C6400FED0EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09B3353024B61C6400FED0EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09CDAFF924C4298A00A096AF /* OrisonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrisonTableViewCell.swift; sourceTree = "<group>"; };
+		09CDAFFA24C4298A00A096AF /* OrisonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrisonTableViewCell.xib; sourceTree = "<group>"; };
+		09E9C59924C9B67200FC3CE6 /* Orison.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orison.swift; sourceTree = "<group>"; };
+		09E9C59B24C9B69800FC3CE6 /* OrisonsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrisonsService.swift; sourceTree = "<group>"; };
+		09E9C59D24C9BBAB00FC3CE6 /* OrisonsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrisonsPresenter.swift; sourceTree = "<group>"; };
+		09E9C59F24D0ECAF00FC3CE6 /* OrisonsSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrisonsSectionHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +78,19 @@
 		09B3351E24B61C6200FED0EE /* PrayerBook */ = {
 			isa = PBXGroup;
 			children = (
+				09CDAFF924C4298A00A096AF /* OrisonTableViewCell.swift */,
+				09CDAFFA24C4298A00A096AF /* OrisonTableViewCell.xib */,
 				09B3351F24B61C6200FED0EE /* AppDelegate.swift */,
+				09E9C59924C9B67200FC3CE6 /* Orison.swift */,
 				09B3352124B61C6200FED0EE /* SceneDelegate.swift */,
-				09B3352324B61C6200FED0EE /* ViewController.swift */,
+				09E9C59B24C9B69800FC3CE6 /* OrisonsService.swift */,
+				09E9C59D24C9BBAB00FC3CE6 /* OrisonsPresenter.swift */,
+				093EA35F24EA413D00010F9A /* Constants.swift */,
+				09B3352324B61C6200FED0EE /* OrisonsView.swift */,
+				0904291E24E3C5E6007A72BD /* OrisonView.swift */,
+				097E187224ED94A10010FA85 /* OrisonsSection.swift */,
+				09E9C59F24D0ECAF00FC3CE6 /* OrisonsSectionHeader.swift */,
+				093EA36124EA41E700010F9A /* SettingsView.swift */,
 				09B3352524B61C6200FED0EE /* Main.storyboard */,
 				09B3352B24B61C6400FED0EE /* Assets.xcassets */,
 				09B3352D24B61C6400FED0EE /* LaunchScreen.storyboard */,
@@ -129,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09B3352F24B61C6400FED0EE /* LaunchScreen.storyboard in Resources */,
+				09CDAFFC24C4298A00A096AF /* OrisonTableViewCell.xib in Resources */,
 				09B3352C24B61C6400FED0EE /* Assets.xcassets in Resources */,
 				09B3352724B61C6200FED0EE /* Main.storyboard in Resources */,
 			);
@@ -141,9 +172,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09B3352424B61C6200FED0EE /* ViewController.swift in Sources */,
+				0904291F24E3C5E6007A72BD /* OrisonView.swift in Sources */,
+				093EA36024EA413D00010F9A /* Constants.swift in Sources */,
+				09B3352424B61C6200FED0EE /* OrisonsView.swift in Sources */,
 				09B3352A24B61C6200FED0EE /* PrayerBook.xcdatamodeld in Sources */,
 				09B3352024B61C6200FED0EE /* AppDelegate.swift in Sources */,
+				09E9C59C24C9B69900FC3CE6 /* OrisonsService.swift in Sources */,
+				09E9C59A24C9B67200FC3CE6 /* Orison.swift in Sources */,
+				09E9C5A024D0ECAF00FC3CE6 /* OrisonsSectionHeader.swift in Sources */,
+				097E187324ED94A10010FA85 /* OrisonsSection.swift in Sources */,
+				09CDAFFB24C4298A00A096AF /* OrisonTableViewCell.swift in Sources */,
+				093EA36224EA41E700010F9A /* SettingsView.swift in Sources */,
+				09E9C59E24C9BBAB00FC3CE6 /* OrisonsPresenter.swift in Sources */,
 				09B3352224B61C6200FED0EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
