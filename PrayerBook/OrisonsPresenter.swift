@@ -11,7 +11,7 @@ import Foundation
 struct OrisonSectionViewData {
     let groupTitle: String
     var isOpened: Bool
-    let orisons: [OrisonViewData]
+    var orisons: [OrisonViewData]
 }
 
 struct OrisonViewData {
@@ -19,7 +19,7 @@ struct OrisonViewData {
     let text: String
 }
 
-protocol OrisonsView: NSObjectProtocol {
+protocol OrisonsViewProtocol: NSObjectProtocol {
     func startLoading()
     func finishLoading()
     func setOrisons(_ users: [OrisonSectionViewData])
@@ -27,8 +27,8 @@ protocol OrisonsView: NSObjectProtocol {
 }
 
 class OrisonsPresenter {
-    fileprivate let orisonsService: OrisonsService
-    weak fileprivate var userView: OrisonsView?
+    private let orisonsService: OrisonsService
+    weak private var userView: OrisonsViewProtocol?
     
     private var orisosns = [OrisonsSection]()
     
@@ -36,7 +36,7 @@ class OrisonsPresenter {
         self.orisonsService = orisonsService
     }
     
-    func attachView(_ view: OrisonsView){
+    func attachView(_ view: OrisonsViewProtocol) {
         userView = view
     }
     

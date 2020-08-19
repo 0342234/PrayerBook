@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OrisonsViewController: UIViewController {
+class OrisonsView: UIViewController {
     
     @IBOutlet private weak var orisonList: UITableView!
     @IBOutlet weak var search: UITextField!
@@ -39,7 +39,7 @@ class OrisonsViewController: UIViewController {
     }
 }
 
-extension OrisonsViewController: UITableViewDelegate, UITableViewDataSource {
+extension OrisonsView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
@@ -97,10 +97,14 @@ extension OrisonsViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension OrisonsViewController: OrisonsView {
-    func startLoading() {}
+extension OrisonsView: OrisonsViewProtocol {
+    func startLoading() {
+        
+    }
     
-    func finishLoading() {}
+    func finishLoading() {
+        
+    }
     
     func setOrisons(_ orisons: [OrisonSectionViewData]) {
         self.orisons = orisons
@@ -108,11 +112,13 @@ extension OrisonsViewController: OrisonsView {
         orisonList.reloadData()
     }
     
-    func setEmptyOrisons() {}
+    func setEmptyOrisons() {
+        
+    }
 
 }
 
-extension OrisonsViewController: OrisonsSectionHeaderProtocol {
+extension OrisonsView: OrisonsSectionHeaderProtocol {
     func didTapped(_ view: OrisonsSectionHeader) {
         let tag = view.tag
         
@@ -122,7 +128,7 @@ extension OrisonsViewController: OrisonsSectionHeaderProtocol {
     }
 }
 
-extension OrisonsViewController: UITextFieldDelegate {
+extension OrisonsView: UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         let searchText  = textField.text! + string
@@ -150,7 +156,7 @@ extension OrisonsViewController: UITextFieldDelegate {
 
 //MARK: - Navigation
 
-extension OrisonsViewController {
+extension OrisonsView {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "listToOrison" {
             if let destinationVC = segue.destination as? OrisonView {
