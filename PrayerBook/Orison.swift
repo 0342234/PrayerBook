@@ -13,4 +13,10 @@ struct Orison {
     let text: String
     let title: String
     let shortText: String?
+    let group: String
+    let isFavorite: Bool = false 
 }
+
+// сохранение в кордату
+// парсинг Codable decodable
+
