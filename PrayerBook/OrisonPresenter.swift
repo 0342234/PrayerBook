@@ -9,22 +9,21 @@
 import Foundation
 import UIKit
 
-protocol OrisonViewDelegate: NSObjectProtocol {
+protocol OrisonViewProtocol: NSObjectProtocol {
     func setOrison(_ orison:Orison)
     
 }
 
-
 class OrisonPresenter {
-    private let orisonsService:OrisonsService //
-    weak private var delegate: OrisonViewDelegate?
+    private let orisonsService: OrisonsService
+    weak private var view: OrisonViewProtocol?
     private var orison: Orison?
     
     init(orisonsService: OrisonsService) {
         self.orisonsService = orisonsService
     }
-    func subscribeDelegate(_ orisonViewDelegate: OrisonViewDelegate)  {
-        delegate = orisonViewDelegate
+    func attachView(_ orisonView: OrisonViewProtocol)  {
+        self.view = orisonView
     }
     
 }
