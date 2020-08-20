@@ -24,6 +24,7 @@
 		09E9C59C24C9B69900FC3CE6 /* OrisonsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E9C59B24C9B69800FC3CE6 /* OrisonsService.swift */; };
 		09E9C59E24C9BBAB00FC3CE6 /* OrisonsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E9C59D24C9BBAB00FC3CE6 /* OrisonsPresenter.swift */; };
 		09E9C5A024D0ECAF00FC3CE6 /* OrisonsSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E9C59F24D0ECAF00FC3CE6 /* OrisonsSectionHeader.swift */; };
+		2DD1FA1024EEADA200A3AC7A /* OrisonPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD1FA0F24EEADA200A3AC7A /* OrisonPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		09E9C59B24C9B69800FC3CE6 /* OrisonsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrisonsService.swift; sourceTree = "<group>"; };
 		09E9C59D24C9BBAB00FC3CE6 /* OrisonsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrisonsPresenter.swift; sourceTree = "<group>"; };
 		09E9C59F24D0ECAF00FC3CE6 /* OrisonsSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrisonsSectionHeader.swift; sourceTree = "<group>"; };
+		2DD1FA0F24EEADA200A3AC7A /* OrisonPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrisonPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				093EA35F24EA413D00010F9A /* Constants.swift */,
 				09B3352324B61C6200FED0EE /* OrisonsView.swift */,
 				0904291E24E3C5E6007A72BD /* OrisonView.swift */,
+				2DD1FA0F24EEADA200A3AC7A /* OrisonPresenter.swift */,
 				097E187224ED94A10010FA85 /* OrisonsSection.swift */,
 				09E9C59F24D0ECAF00FC3CE6 /* OrisonsSectionHeader.swift */,
 				093EA36124EA41E700010F9A /* SettingsView.swift */,
@@ -174,6 +177,7 @@
 			files = (
 				0904291F24E3C5E6007A72BD /* OrisonView.swift in Sources */,
 				093EA36024EA413D00010F9A /* Constants.swift in Sources */,
+				2DD1FA1024EEADA200A3AC7A /* OrisonPresenter.swift in Sources */,
 				09B3352424B61C6200FED0EE /* OrisonsView.swift in Sources */,
 				09B3352A24B61C6200FED0EE /* PrayerBook.xcdatamodeld in Sources */,
 				09B3352024B61C6200FED0EE /* AppDelegate.swift in Sources */,

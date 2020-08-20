@@ -18,15 +18,24 @@ class OrisonView: UIViewController {
                                              title: "",
                                              shortText: "")
     
+   var orisonPresenter = OrisonPresenter(orisonsService: OrisonsService())
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        textView.text = orison.text
-        orisonLabel.text = orison.title
+        dataInstall(orison)
+        orisonPresenter.subscribeDelegate(self)
+    
     }
     
+    func dataInstall(_ orison:Orison)  {
+        self.textView.text = orison.text
+        self.orisonLabel.text = orison.title
+    }
+}
 
+
+extension OrisonView: OrisonViewDelegate {
     func setOrison(_ orison: Orison) {
         self.orison = orison
+        
     }
 }
