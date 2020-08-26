@@ -29,7 +29,7 @@ class OrisonsService {
                                       id: 1,
                                       orisosns: orisons)
         
-        let section2 = OrisonsSection(title: "Cекция Молитв",
+        let section2 = OrisonsSection(title: "Cекция Молитва",
                                       id: 2,
                                       orisosns: orisons)
         

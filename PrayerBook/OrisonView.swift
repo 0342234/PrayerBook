@@ -9,23 +9,31 @@
 import UIKit
 
 class OrisonView: UIViewController {
-
+    
     @IBOutlet private weak var textView: UITextView!
     @IBOutlet private weak var orisonLabel: UILabel!
     
     var orison: Orison = Orison(id: UUID.init(),
-                                             text: "",
-                                             title: "",
-                                             shortText: "")
+                                text: "",
+                                title: "",
+                                shortText: "")
     
+    var orisonPresenter = OrisonPresenter(orisonsService: OrisonsService())
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        textView.text = orison.text
-        orisonLabel.text = orison.title
+        dataInstall(orison)
+        orisonPresenter.attachView(self)
+        
     }
     
+    func dataInstall(_ orison:Orison)  {
+        self.textView.text = orison.text
+        self.orisonLabel.text = orison.title
+    }
+}
 
+
+extension OrisonView: OrisonViewProtocol {
     func setOrison(_ orison: Orison) {
         self.orison = orison
     }
